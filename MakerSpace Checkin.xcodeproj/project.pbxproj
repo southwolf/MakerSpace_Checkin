@@ -21,6 +21,11 @@
 		88145C1218B9DC8B00A0D2B1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88145BF418B9DC8A00A0D2B1 /* UIKit.framework */; };
 		88145C1A18B9DC8B00A0D2B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88145C1818B9DC8B00A0D2B1 /* InfoPlist.strings */; };
 		88145C1C18B9DC8B00A0D2B1 /* MakerSpace_CheckinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88145C1B18B9DC8B00A0D2B1 /* MakerSpace_CheckinTests.m */; };
+		88145C2618B9DCF400A0D2B1 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88145C2518B9DCF400A0D2B1 /* AVOSCloud.framework */; };
+		884C80D518B9EFE300522D27 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884C80D418B9EFE200522D27 /* SystemConfiguration.framework */; };
+		884C80D718B9EFEE00522D27 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884C80D618B9EFEE00522D27 /* MobileCoreServices.framework */; };
+		884C80D918B9EFF900522D27 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884C80D818B9EFF900522D27 /* CoreTelephony.framework */; };
+		884C80DB18B9F00C00522D27 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884C80DA18B9F00C00522D27 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		88145C1718B9DC8B00A0D2B1 /* MakerSpace CheckinTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MakerSpace CheckinTests-Info.plist"; sourceTree = "<group>"; };
 		88145C1918B9DC8B00A0D2B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		88145C1B18B9DC8B00A0D2B1 /* MakerSpace_CheckinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakerSpace_CheckinTests.m; sourceTree = "<group>"; };
+		88145C2518B9DCF400A0D2B1 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVOSCloud.framework; path = ../../../Library/Frameworks/AVOSCloud.framework; sourceTree = "<group>"; };
+		884C80D418B9EFE200522D27 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		884C80D618B9EFEE00522D27 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		884C80D818B9EFF900522D27 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		884C80DA18B9F00C00522D27 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884C80DB18B9F00C00522D27 /* CoreLocation.framework in Frameworks */,
+				884C80D918B9EFF900522D27 /* CoreTelephony.framework in Frameworks */,
+				884C80D718B9EFEE00522D27 /* MobileCoreServices.framework in Frameworks */,
+				884C80D518B9EFE300522D27 /* SystemConfiguration.framework in Frameworks */,
+				88145C2618B9DCF400A0D2B1 /* AVOSCloud.framework in Frameworks */,
 				88145BF318B9DC8A00A0D2B1 /* CoreGraphics.framework in Frameworks */,
 				88145BF518B9DC8A00A0D2B1 /* UIKit.framework in Frameworks */,
 				88145BF118B9DC8A00A0D2B1 /* Foundation.framework in Frameworks */,
@@ -101,6 +116,11 @@
 		88145BEF18B9DC8A00A0D2B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				884C80DA18B9F00C00522D27 /* CoreLocation.framework */,
+				884C80D818B9EFF900522D27 /* CoreTelephony.framework */,
+				884C80D618B9EFEE00522D27 /* MobileCoreServices.framework */,
+				884C80D418B9EFE200522D27 /* SystemConfiguration.framework */,
+				88145C2518B9DCF400A0D2B1 /* AVOSCloud.framework */,
 				88145BF018B9DC8A00A0D2B1 /* Foundation.framework */,
 				88145BF218B9DC8A00A0D2B1 /* CoreGraphics.framework */,
 				88145BF418B9DC8A00A0D2B1 /* UIKit.framework */,
@@ -378,6 +398,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MakerSpace Checkin/MakerSpace Checkin-Prefix.pch";
 				INFOPLIST_FILE = "MakerSpace Checkin/MakerSpace Checkin-Info.plist";
@@ -391,6 +415,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MakerSpace Checkin/MakerSpace Checkin-Prefix.pch";
 				INFOPLIST_FILE = "MakerSpace Checkin/MakerSpace Checkin-Info.plist";
@@ -460,6 +488,7 @@
 				88145C2118B9DC8B00A0D2B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88145C2218B9DC8B00A0D2B1 /* Build configuration list for PBXNativeTarget "MakerSpace CheckinTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +497,7 @@
 				88145C2418B9DC8B00A0D2B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
