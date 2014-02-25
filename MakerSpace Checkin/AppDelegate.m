@@ -13,8 +13,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [AVOSCloud setApplicationId:@"2ntbncdn3g6nfxsocl0leact0096y8tffm59d5f8o3dfqa49"
-                      clientKey:@"91586kv97dshex8pb6io2as0pzr79ehruarzwmkha1jeppcj"];
+    [AVOSCloud setApplicationId:@"MyAppID"
+                      clientKey:@"MyClientKey"];
     //[AVCloud setProductionMode:NO]; // Test Environment
     
 
